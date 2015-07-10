@@ -2,7 +2,7 @@
 require('util.php');
 
 // アプリケーション設定
-define('CONSUMER_KEY', ' hxlPpJHDZQU28NvsFVu0WMWcf');
+define('CONSUMER_KEY', 'hxlPpJHDZQU28NvsFVu0WMWcf');
 define('CONSUMER_SECRET', 'ho1vt4Z9YTY8qUxR7Nt7hCJNQucIkYH03c8NXmwPq0MTpm1fTB');
 define('CALLBACK_URL', 'http://192.168.33.19/callback.php');
 

@@ -56,4 +56,7 @@ $params['oauth_signature'] = build_signature('GET', INFO_URL, $params, CONSUMER_
 $res = file_get_contents(INFO_URL . '?' . http_build_query($params));
 
 // 表示
-echo "<pre>" . print_r(json_decode($res, true), true) . "</pre>";
+//echo "<pre>" . print_r(json_decode($res, true), true) . "</pre>";
+require_once('path/to/twitteroauth.php');
+$TwitterOAuth = new TwitterOAuth('CONSUMER_KEY', 'CONSUMER_SECRET', $access_token, $access_token_secret);
+$userinfo = $TwitterOAuth->get('users/show', ['screen_name'=> '@ozsakuma']);
